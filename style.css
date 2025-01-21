@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+#navbar{     /* ila khdmti bi l class .navbar maghadich ytab9 l color */
+    background-color: #285430 !important; /* maghadich ytab9 l code 7ta ndir !important */
+    position: sticky;
+    top: 0;
+    z-index: 2; /* bach ydozo t7t mnha*/
+}
+.navbar-brand {
+    color: white  !important;
+    margin: 0 350px 0 60px !important; /* margin: top right bottom left; w drna had l margin bach nba3do l brand 3la  l  <li> */
+}
+.nav-link {
+    color: white  !important;
+    margin: 0 20px !important;
+}
+.nav-item:hover{
+    background-color: black;
+    border-radius: 50%;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* drt l width(width: 400px;) l .home__left 3ada bach tab9at  %   */ 
+    height: 90vh;
+    background-color: #285430;
+}
+.home__left {
+    width: 400px;  /*  %  */ 
+}
+
+.home__left>h1 {
+    color: white;  
+}
+.home__left>h1>span {
+    color: red;
+}
+.home__left>p {
+    color: white;  
+}
+.home__left>button {
+    background-color: blue;
+    color: white;
+    border: none;  
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.home__left>button:hover {
+    background-color: green;
+}
+
+.home__right>img {
+    width: 400px;
+    /* transform: rotate(90deg);   blama nsta3mlha aslan sbrdilla m9ada */
+}
+@media only screen and (max-width: 991px) {
+    .home {
+        flex-direction: column-reverse;
+    }
+    .home__left {
+        text-align: center; 
+    }
+    .home__right>img {
+        width: 300px;
+        /* transform: rotate(90deg);   blama nsta3mlha aslan sbrdilla m9ada */
+    }
+}
+
+/* Men and women and kids */
+.main {
+    background-color:red !important;
+}
+.title {
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.shoes__container {
+    display: flex; /* bach yjiw l image dyal main 7da b3dyathom */
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* bach mni nsaghro tnzl w7da t7t w7da  */
+}
+.shoes__container>.shoes__card>img {
+    width: 344.75px; /* drt l width w l height bach img twli 9ad l card dyali w hadchi chto fi inspect*/
+    height: 372.48;
+}
+.shoes__container>.shoes__card {
+    background-color: white;
+    box-shadow: 0px 0px 22px rgb(57, 56, 56);
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+.shoes__card>h3 {
+    text-align: start;
+    padding: 0 5px;
+}
+.shoes__card>div {
+    text-align: start;
+    padding: 0 5px;
+    font-weight: 800;
+}
+.shoes__card>i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 22px;
+}
+.shoes__card>i:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: #285430;
+    color: white;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.info {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+}
+.info>i {
+    font-size: 32px;
+    margin: 0 15px;
+}
+.info>div {
+    font-size: 26px;
+}
+.footer__right {
+    width: 400px;
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.icons>i:hover {
+    transform: scale(1.3);
+}
